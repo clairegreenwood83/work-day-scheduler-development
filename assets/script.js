@@ -2,9 +2,9 @@
 
 // // function to run when page loads
 
-// // function loadFunction() {
-//     var text = ($(this).siblings('textarea').val()); //targeting button 
-//     var time = ($(this).siblings('div').text());
+ function loadFunction() {
+         var text = ($(this).siblings('textarea').val()); //targeting button 
+         var time = ($(this).siblings('div').text());
 
 //     const input = {
 //         text: text,
@@ -12,10 +12,13 @@
 //     }
 //     data.push(input)
 //     var data = JSON.parse(localStorage.getItem('input')) || {};
-//    // console.log(text);
-//  }
-// //
-//  window.onload = loadFunction();
+
+        var text = JSON.parse(localStorage.getItem(time)) 
+        console.log(text);
+        
+ }
+
+window.onload = loadFunction();
 
 // Display the current day at the top of the calender when a user opens the planner.
 

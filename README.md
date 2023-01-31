@@ -1,5 +1,4 @@
-# work-day-scheduler-developmentThe app should:
-# timed_code_quiz
+# work-day-scheduler
 
 ## Description
 

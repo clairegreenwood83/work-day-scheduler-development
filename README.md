@@ -37,10 +37,16 @@ The following animation demonstrates what the functionality of how the final app
 ![05-third-party-apis-homework-demo](https://user-images.githubusercontent.com/118351853/215757451-fd6312d3-ea6d-46a4-a71a-e57bea2e969f.gif)
 
 
-
 ## Deployment
 
-- Using the following [link.](https://clairegreenwood83.github.io/work-day-scheduler-development/)
+- Using the following [link](https://clairegreenwood83.github.io/work-day-scheduler-development/) open the web page, which looks as follows:
+- 
+![_Users_clairegreenwood_bootcamp_week-seven_work-day-scheduler-development_index html](https://user-images.githubusercontent.com/118351853/215760010-2208bd6a-19ad-4cd0-9926-570381c9465d.png)
+
+- Click in the centre section of the calender to record scheduled events.
+- Click the blue save button on the right of the calender to save the event.
+- On refeshing or closing the web page, the scheduled events will still be able to be viewed. (This function is still pending).
+- To clear the calender events click on the clear button. (This function is still pending). 
 
 ## Technology Stack
 

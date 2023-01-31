@@ -3,22 +3,20 @@
 // // function to run when page loads
 
  function loadFunction() {
-         var text = ($(this).siblings('textarea').val()); //targeting button 
-         var time = ($(this).siblings('div').text());
+   
+         $("#textArea1").val(localStorage.getItem("9AM"));
+         $("#textArea2").val(localStorage.getItem("10AM"));
+         $("#textArea3").val(localStorage.getItem("11AM"));
+         $("#textArea4").val(localStorage.getItem("12AM"));
+         $("#textArea5").val(localStorage.getItem("1PM"));
+         $("#textArea6").val(localStorage.getItem("2PM"));
+         $("#textArea7").val(localStorage.getItem("3PM"));
+         $("#textArea8").val(localStorage.getItem("4PM"));
+         $("#textArea9").val(localStorage.getItem("5PM"));
 
-//     const input = {
-//         text: text,
-//         time: time,
-//     }
-//     data.push(input)
-//     var data = JSON.parse(localStorage.getItem('input')) || {};
-
-        var text = JSON.parse(localStorage.getItem(time)) 
-        console.log(text);
-        
  }
 
-window.onload = loadFunction();
+ window.onload = loadFunction();
 
 // Display the current day at the top of the calender when a user opens the planner.
 
@@ -30,6 +28,11 @@ console.log(today);
 $("#currentDay").text(today.format("dddd, MMMM Do"));
 
 // Color-code each timeblock based on past, present, and future when the timeblock is viewed.
+
+/*// pseudocode
+// if time-block row is less than the current time, colour will equal grey
+// if time-block row is more than current time, colour will equal green
+// if time-block row is equal to the current time, colour will equal red */
 
 function timeBlockColor() {
     var hour = moment().hours();
@@ -53,21 +56,19 @@ function timeBlockColor() {
 
 timeBlockColor();
 
-/*// pseudocode
-// if time-block row is less than the current time, colour will equal grey
-// if time-block row is more than current time, colour will equal green
-// if time-block row is equal to the current time, colour will equal red */
-
-
 // Save the event in local storage when the save button is clicked in that timeblock.
 
 // .textArea content is what we want saved to local storage 
-function save() {
+function save(text) {
 
-   var text = ($(this).siblings('textarea').val()); //targeting button 
+   var text = ($(this).siblings('textarea').val()); //targeting the save button, this is equal to the save button
    var time = ($(this).siblings('div').text());
 
-   localStorage.setItem(time, JSON.stringify(text));
+   //console.log(this);
+
+   localStorage.setItem(time, (text));
+
+   alert("Event saved!");
   
    }
 

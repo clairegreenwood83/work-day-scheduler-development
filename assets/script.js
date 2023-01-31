@@ -59,26 +59,25 @@ timeBlockColor();
 
 // Save the event in local storage when the save button is clicked in that timeblock.
 
-
 // .textArea content is what we want saved
 function save() {
-    var text = {time: ($(this).siblings('div').text()), text: ($(this).siblings('textarea').val())}
-    console.log(text);
-   // var text = ($(this).siblings('textarea').val()); //targeting button 
-  // var time = ($(this).siblings('div').text());
+   // var text = {time: ($(this).siblings('div').text()), text: ($(this).siblings('textarea').val())}
+    //console.log(text);
+    var text = ($(this).siblings('textarea').val()); //targeting button 
+    var time = ($(this).siblings('div').text());
 
     //console.log(text);
    // console.log(time);
+   localStorage.setItem(time, JSON.stringify(text));
 
-   localStorage.setItem("input", JSON.stringify(text));
-
-   var text = JSON.parse(localStorage.getItem("input")) || {};
+   var text = JSON.parse(localStorage.getItem(time)) || {};
    console.log(text);
+//    localStorage.setItem("input", JSON.stringify(text));
 
-    
+//    var text = JSON.parse(localStorage.getItem("input")) || {};
+//    console.log(text);
+
 }
-
-
 
 // add event listener so event saved when save button clicked.
 

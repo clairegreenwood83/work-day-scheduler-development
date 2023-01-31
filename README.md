@@ -40,7 +40,7 @@ The following animation demonstrates what the functionality of how the final app
 ## Deployment
 
 - Using the following [link](https://clairegreenwood83.github.io/work-day-scheduler-development/) open the web page, which looks as follows:
-- 
+
 ![_Users_clairegreenwood_bootcamp_week-seven_work-day-scheduler-development_index html](https://user-images.githubusercontent.com/118351853/215760010-2208bd6a-19ad-4cd0-9926-570381c9465d.png)
 
 - Click in the centre section of the calender to record scheduled events.

@@ -1,3 +1,22 @@
+
+
+// // function to run when page loads
+
+// // function loadFunction() {
+//     var text = ($(this).siblings('textarea').val()); //targeting button 
+//     var time = ($(this).siblings('div').text());
+
+//     const input = {
+//         text: text,
+//         time: time,
+//     }
+//     data.push(input)
+//     var data = JSON.parse(localStorage.getItem('input')) || {};
+//    // console.log(text);
+//  }
+// //
+//  window.onload = loadFunction();
+
 // Display the current day at the top of the calender when a user opens the planner.
 
 var currentDay = $("#currentDay");//document.getElementById("currentDay");
@@ -8,26 +27,6 @@ console.log(today);
 $("#currentDay").text(today.format("dddd, MMMM Do"));
 
 // Color-code each timeblock based on past, present, and future when the timeblock is viewed.
-
-/*function timeblockColour() {
-
-var currentTime = moment().format('H');
-//var timeBlockElements = $(".textarea");
-
-console.log(currentTime);
-
-//if (currentTime)
-// isAfter();?
-/*let ID = $(".time-block").attr('id')
-
-if (ID > currentTime) {
-    $(".time-block").addClass("future");
-} else if (ID === currentTime) {
-    $(".time-block").addClass("present");
-} else {
-    $(".time-block").addClass("past");
-}
-}*/
 
 function timeBlockColor() {
     var hour = moment().hours();
@@ -59,25 +58,16 @@ timeBlockColor();
 
 // Save the event in local storage when the save button is clicked in that timeblock.
 
-// .textArea content is what we want saved
+// .textArea content is what we want saved to local storage 
 function save() {
-   // var text = {time: ($(this).siblings('div').text()), text: ($(this).siblings('textarea').val())}
-    //console.log(text);
-    var text = ($(this).siblings('textarea').val()); //targeting button 
-    var time = ($(this).siblings('div').text());
 
-    //console.log(text);
-   // console.log(time);
+   var text = ($(this).siblings('textarea').val()); //targeting button 
+   var time = ($(this).siblings('div').text());
+
    localStorage.setItem(time, JSON.stringify(text));
+  
+   }
 
-   var text = JSON.parse(localStorage.getItem(time)) || {};
-   console.log(text);
-//    localStorage.setItem("input", JSON.stringify(text));
-
-//    var text = JSON.parse(localStorage.getItem("input")) || {};
-//    console.log(text);
-
-}
 
 // add event listener so event saved when save button clicked.
 

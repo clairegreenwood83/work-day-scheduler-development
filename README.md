@@ -1,4 +1,4 @@
-# work-day-scheduler
+# work-day-scheduler-development
 
 ## Description
 
@@ -40,7 +40,7 @@ The following animation demonstrates what the functionality of how the final app
 
 ## Deployment
 
-- Using the following link (https://clairegreenwood83.github.io/work-day-scheduler-development/)
+- Using the following [link.] (https://clairegreenwood83.github.io/work-day-scheduler-development/)
 
 ## Technology Stack
 

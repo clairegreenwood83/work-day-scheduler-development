@@ -43,10 +43,11 @@ The following animation demonstrates what the functionality of how the final app
 
 ![_Users_clairegreenwood_bootcamp_week-seven_work-day-scheduler-development_index html](https://user-images.githubusercontent.com/118351853/215760010-2208bd6a-19ad-4cd0-9926-570381c9465d.png)
 
-- Click in the centre section of the calender to record scheduled events.
-- Click the blue save button on the right of the calender to save the event.
-- On refeshing or closing the web page, the scheduled events will still be able to be viewed. (This function is still pending).
-- To clear the calender events click on the clear button. (This function is still pending). 
+- The user should click in the centre section of the calender to record their scheduled events.
+- Previous hours appear grey, the current hour appears red and future hours appear green. 
+- Once the user has entered an event in the calendar they should click the blue save button on the right of the calender to save the event.
+- An alert will appear on the page indicating that the event has been saved.
+- On refeshing or closing the web page, the scheduled events will still be able to be viewed. 
 
 ## Technology Stack
 
